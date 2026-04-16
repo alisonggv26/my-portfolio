@@ -1,1 +1,109 @@
 @import 'tailwindcss';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@import '@fontsource/inter/900.css';
+
+@theme {
+  /* Colors */
+  --color-surface: #f5f5f5;
+  --color-ink: #0d0d0d;
+  --color-accent: #d4d5db;         /* bright silver */
+  --color-accent-dark: #a8aaB0;
+  --color-silver-trim: #ededf0;    /* near-white reflective trim */
+  --color-gunmetal: #26282f;
+  --color-dark-bg: #0d0d0d;
+  --color-dark-surface: #1c1d22;   /* gunmetal-tinted dark surface */
+  --color-muted: #6b6b6b;
+  --color-border: #d8d8d8;
+
+  /* Typography */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Fluid type ── */
+@utility text-display {
+  font-size: clamp(3.5rem, 8vw + 1rem, 8rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+@utility text-hero {
+  font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+@utility text-headline {
+  font-size: clamp(1.875rem, 3vw + 0.5rem, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+@utility text-title {
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* ── Section spacing ── */
+@utility pt-section {
+  padding-top: clamp(5rem, 10vw, 9rem);
+}
+
+@utility pb-section {
+  padding-bottom: clamp(5rem, 10vw, 9rem);
+}
+
+@utility py-section {
+  padding-top: clamp(5rem, 10vw, 9rem);
+  padding-bottom: clamp(5rem, 10vw, 9rem);
+}
+
+/* ── Dark panel texture: SVG grain + two-frequency brushed-metal diagonal stripes ── */
+@utility textured-panel {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(
+      -55deg,
+      transparent,
+      transparent 18px,
+      rgba(160, 162, 175, 0.07) 18px,
+      rgba(160, 162, 175, 0.07) 19px
+    ),
+    repeating-linear-gradient(
+      -55deg,
+      transparent,
+      transparent 54px,
+      rgba(200, 202, 215, 0.04) 54px,
+      rgba(200, 202, 215, 0.04) 56px
+    );
+}
+
+/* ── Silver reflective trim: inset top edge, no border-property conflict ── */
+@utility panel-trim {
+  box-shadow: inset 0 2px 0 0 var(--color-silver-trim);
+}
+
+/* ── Metallic gradient text with luminous glow ── */
+@utility text-metallic {
+  background: linear-gradient(
+    135deg,
+    #c8c9cf 0%,
+    #f0f1f5 35%,
+    #ffffff 50%,
+    #f0f1f5 65%,
+    #c8c9cf 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  filter:
+    drop-shadow(0 0 18px rgba(230, 232, 242, 0.5))
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.25));
+}

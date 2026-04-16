@@ -9,10 +9,10 @@ export interface SiteMeta {
 
 export const site: SiteMeta = {
 	name: 'Alison Granger',
-	title: 'Alison Granger — Product & Strategy',
+	title: 'Alison Granger — Event Strategy & Ecosystem',
 	description:
-		'Product and strategy consultant who turns messy problems into clear outcomes. Available for freelance engagements.',
+		'Event strategist & ecosystem architect who turns messy problems into clear outcomes. Available for freelance engagements.',
 	email: 'alison.granger.gan@gmail.com',
-	role: 'Product & Strategy Consultant',
+	role: 'Event Strategist & Ecosystem Architect',
 	tagline: 'I solve real problems.'
 };

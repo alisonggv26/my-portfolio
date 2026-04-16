@@ -38,7 +38,7 @@
 
 <svelte:head>
 	<title>About — Alison Granger</title>
-	<meta name="description" content="Product and strategy consultant. How I work and why it works." />
+	<meta name="description" content="Event strategist & ecosystem architect. How I work and why it works." />
 </svelte:head>
 
 <div bind:this={page}>
@@ -50,7 +50,7 @@
 				I make the<br /><span class="text-metallic">complex clear.</span>
 			</h1>
 			<p class="js-gsap-page-sub mt-6 max-w-xl text-lg leading-relaxed text-white/55">
-				I'm a product and strategy consultant. I work with founders and product leaders
+				I'm an event strategist & ecosystem architect. I work with founders and product leaders
 				who are facing problems that don't have obvious answers — and help them find the
 				right ones.
 			</p>

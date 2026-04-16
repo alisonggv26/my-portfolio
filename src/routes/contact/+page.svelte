@@ -1,21 +1,20 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { withGsapContext } from '$lib';
-	import { site } from '$lib/data/index';
 	import SectionLabel from '$lib/components/SectionLabel.svelte';
 
 	const faqs = [
 		{
 			q: 'How do engagements typically work?',
-			a: 'Most engagements are project-based with a defined scope and timeline — usually 4 to 12 weeks. I work async-first with structured check-ins, so I integrate without disrupting your team.'
+			a: 'Most engagements are project-based with a defined scope — from a single flagship event to a multi-event series or ecosystem program. I work closely with your team from strategy through execution.'
 		},
 		{
-			q: 'What does availability look like?',
-			a: "I take on two to three clients at a time. If I'm fully booked, I'll tell you — and give you an honest timeline for when I'm next available."
+			q: 'Do you work internationally?',
+			a: 'Yes. Blooming operates across US, Europe, and LatAm with local understanding. Cross-border expansion is a core part of what we do — not an add-on.'
 		},
 		{
-			q: 'Do you work with early-stage companies?',
-			a: "Yes. A lot of my best work happens before a company has a full product team. If you're pre-Series A and the problem is real, let's talk."
+			q: 'What stage of company do you work with?',
+			a: "Primarily Series A+ and growth-stage companies in AI and developer ecosystems. If you're scaling fast and need ecosystem infrastructure that matches your ambition, let's talk."
 		}
 	];
 
@@ -37,7 +36,7 @@
 
 <svelte:head>
 	<title>Contact — Alison Granger</title>
-	<meta name="description" content="Get in touch. Tell me about the problem." />
+	<meta name="description" content="Get in touch. Let's build something together." />
 </svelte:head>
 
 <div bind:this={page}>
@@ -46,29 +45,50 @@
 		<div class="mx-auto max-w-6xl px-6 lg:px-8" style="padding-top: 6rem;">
 			<SectionLabel label="Contact" dark />
 			<h1 class="js-gsap-page-title text-hero mt-4 font-black text-white">
-				Let's <span class="text-metallic">talk.</span>
+				Let's build something <span class="text-metallic">together.</span>
 			</h1>
 			<p class="js-gsap-page-sub mt-6 max-w-lg text-lg leading-relaxed text-white/55">
-				Tell me about the problem. I'll tell you if I can help — and if I can't, I'll
-				point you toward someone who can.
+				The best ecosystems are built by someone in the room who understands the stakes, the people, and the signal.
 			</p>
 		</div>
 	</section>
 
-	<!-- Contact details + what to include -->
+	<!-- Contact details -->
 	<section class="py-section bg-surface">
 		<div class="mx-auto max-w-6xl px-6 lg:px-8">
 			<div class="grid gap-12 md:grid-cols-2">
-				<!-- Email -->
-				<div class="js-gsap-contact-block">
-					<SectionLabel label="Reach me at" />
-					<a
-						href="mailto:{site.email}"
-						class="mt-4 block text-2xl font-bold text-ink transition-colors hover:text-accent-dark"
-					>
-						{site.email}
-					</a>
-					<p class="mt-3 text-sm text-muted">I respond within one business day.</p>
+				<!-- Contact info -->
+				<div class="js-gsap-contact-block space-y-6">
+					<div>
+						<SectionLabel label="Email" />
+						<a
+							href="mailto:alison@weareblooming.co"
+							class="mt-4 block text-2xl font-bold text-ink transition-colors hover:text-accent-dark"
+						>
+							alison@weareblooming.co
+						</a>
+					</div>
+					<div>
+						<SectionLabel label="Phone" />
+						<a
+							href="tel:+16282208079"
+							class="mt-4 block text-xl font-bold text-ink transition-colors hover:text-accent-dark"
+						>
+							+1 628 220 8079
+						</a>
+					</div>
+					<div>
+						<SectionLabel label="Website" />
+						<a
+							href="https://weareblooming.co"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="mt-4 block text-xl font-bold text-ink transition-colors hover:text-accent-dark"
+						>
+							weareblooming.co
+						</a>
+					</div>
+					<p class="text-sm text-muted">SF-based · Global reach across US, Europe & LatAm</p>
 				</div>
 
 				<!-- What to include -->
@@ -76,10 +96,10 @@
 					<SectionLabel label="What to include" />
 					<ul class="mt-4 space-y-3">
 						{#each [
-							'A brief description of the problem — not the solution you have in mind, the problem itself',
-							'Your rough timeline and whether there is a hard deadline',
-							'Whether you\'ve tried to solve this before and what happened',
-							'Your company stage and team size (ballpark is fine)'
+							'What you\'re building and what market or geography you\'re targeting',
+							'The event or community challenge you\'re trying to solve',
+							'Your timeline and any hard deadlines',
+							'Company stage and whether you need strategy, execution, or both'
 						] as item}
 							<li class="flex items-start gap-3 text-sm leading-relaxed text-muted">
 								<span class="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent"></span>

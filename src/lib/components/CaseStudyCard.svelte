@@ -37,15 +37,27 @@
 		</p>
 	</div>
 
-	<div class="mt-auto flex flex-wrap gap-2">
-		{#each study.tags as tag}
-			<span
-				class="px-2.5 py-1 text-xs font-medium {dark
-					? 'bg-white/5 text-white/50'
-					: 'bg-border text-muted'}"
+	<div class="mt-auto flex flex-wrap items-center justify-between gap-3">
+		<div class="flex flex-wrap gap-2">
+			{#each study.tags as tag}
+				<span
+					class="px-2.5 py-1 text-xs font-medium {dark
+						? 'bg-white/5 text-white/50'
+						: 'bg-border text-muted'}"
+				>
+					{tag}
+				</span>
+			{/each}
+		</div>
+		{#if study.link}
+			<a
+				href={study.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-xs font-semibold uppercase tracking-widest text-accent transition-opacity hover:opacity-70"
 			>
-				{tag}
-			</span>
-		{/each}
+				View →
+			</a>
+		{/if}
 	</div>
 </article>

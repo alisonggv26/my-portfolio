@@ -8,49 +8,54 @@ export interface Service {
 
 export const services: Service[] = [
 	{
-		id: 'product-strategy',
-		title: 'Product Strategy',
+		id: 'event-strategy',
+		title: 'Event Strategy & Positioning',
 		description:
-			'From fuzzy problem space to crisp roadmap. I work with founders and product leaders to cut through noise and build plans that actually ship.',
-		deliverables: ['Product vision & principles', 'Opportunity sizing', 'Prioritised roadmap', 'OKR framework'],
+			'Multi-event series designed as sustained narrative arcs — not one-off activations. Aligned to business objectives and built to create momentum across developer and startup ecosystems.',
+		deliverables: [
+			'Multi-event series aligned to business objectives',
+			'Narrative architecture that builds momentum',
+			'Audience mapping and community segmentation',
+			'Post-event storytelling and amplification'
+		],
 		highlighted: true
 	},
 	{
-		id: 'discovery',
-		title: 'Discovery & Research',
+		id: 'community-architecture',
+		title: 'Community Architecture',
 		description:
-			'I run structured discovery to replace assumptions with evidence — quickly, and without months of research overhead.',
+			'Ecosystem design for companies entering new markets and geographies. Builds the infrastructure for repeated, high-trust interactions — not a mailing list, but a living network.',
 		deliverables: [
-			'User interviews',
-			'Jobs-to-be-done analysis',
-			'Competitive landscape',
-			'Insight synthesis'
+			'Ecosystem design for new markets and geographies',
+			'Community lead recruitment and training',
+			'Curation and signal-to-noise optimization',
+			'Scalable community programming'
 		],
 		highlighted: false
 	},
 	{
-		id: 'gtm',
-		title: 'Go-to-Market Strategy',
+		id: 'full-execution',
+		title: 'Full Execution',
 		description:
-			"Positioning, ICP definition, and a launch plan built for teams that can't afford to guess.",
+			'End-to-end operations from concept to post-event. Every logistical detail handled — so the team can focus on the relationships being built in the room.',
 		deliverables: [
-			'ICP & segment definition',
-			'Messaging framework',
-			'Channel strategy',
-			'Launch playbook'
+			'End-to-end operations and logistics',
+			'On-site production and community management',
+			'Attendee curation and experience design',
+			'Livestream production and social amplification'
 		],
 		highlighted: false
 	},
 	{
-		id: 'org-design',
-		title: 'Team & Process Design',
+		id: 'ecosystem-programs',
+		title: 'Ecosystem Programs',
 		description:
-			'Scaling fast but things are breaking? I help product orgs build the processes that let them move with confidence, not chaos.',
+			'Developer programs and international expansion work for companies scaling across borders — especially in AI and developer ecosystems where traditional events no longer create differentiation.',
 		deliverables: [
-			'Team topology review',
-			'Decision frameworks',
-			'Rituals & meeting design',
-			'RACI mapping'
+			'Developer programs and partnerships',
+			'Sponsorship strategy and partner alignment',
+			'International expansion programs',
+			'Cross-border community infrastructure'
 		],
 		highlighted: false
 	}

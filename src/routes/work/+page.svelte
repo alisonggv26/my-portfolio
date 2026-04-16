@@ -35,11 +35,11 @@
 		<div class="mx-auto max-w-6xl px-6 lg:px-8" style="padding-top: 6rem;">
 			<SectionLabel label="Selected Work" dark />
 			<h1 class="js-gsap-page-title text-hero mt-4 max-w-3xl font-black text-white">
-				Problems I've <span class="text-metallic">solved.</span>
+				Building ecosystems <span class="text-metallic">at scale.</span>
 			</h1>
 			<p class="js-gsap-page-sub mt-6 max-w-xl text-lg leading-relaxed text-white/55">
-				Every engagement starts with a specific problem and ends with a measurable outcome.
-				Here's a selection of the work.
+				150+ events architected. 15k+ builders engaged. Every engagement starts with a clear problem
+				and ends with infrastructure that outlasts the event.
 			</p>
 		</div>
 	</section>
@@ -59,7 +59,7 @@
 	<section class="textured-panel bg-gunmetal py-20">
 		<div class="mx-auto max-w-6xl px-6 lg:px-8">
 			<p class="text-sm font-semibold uppercase tracking-widest text-white/40">Next step</p>
-			<h2 class="text-headline mt-3 font-black text-white">Have a problem in mind?</h2>
+			<h2 class="text-headline mt-3 font-black text-white">Have an ecosystem to build?</h2>
 			<p class="mt-4 max-w-lg text-lg text-white/50">
 				Tell me what you're working on. If it's a fit, I'll tell you how I'd approach it.
 			</p>

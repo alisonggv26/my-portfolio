@@ -111,7 +111,7 @@
 			<h2 class="text-headline font-black text-white">Let's build something together.</h2>
 			<p class="mt-4 text-lg text-white/40">The best ecosystems are built by someone who understands the stakes, the people, and the signal.</p>
 			<div class="mt-8">
-				<Button href="/contact/" size="lg" variant="outline" class="border-accent text-accent hover:bg-accent hover:text-ink">
+				<Button href="/contact/" size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-black!">
 					Get in touch
 				</Button>
 			</div>

@@ -11,7 +11,7 @@
 </script>
 
 <article
-	class="js-gsap-card panel-trim group flex flex-col gap-6 border p-8 transition-colors duration-200 {dark
+	class="js-gsap-card panel-trim group flex flex-col gap-6 overflow-hidden border p-8 transition-colors duration-200 {dark
 		? 'border-white/10 hover:border-white/20'
 		: 'border-border hover:border-accent'}"
 	data-index={index}
@@ -24,7 +24,7 @@
 			<p class="mt-1 text-sm font-medium {dark ? 'text-white/60' : 'text-muted'}">{study.engagement}</p>
 		</div>
 		<span
-			class="shrink-0 border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent"
+			class="max-w-56 shrink-0 border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold leading-snug text-accent line-clamp-2"
 		>
 			{study.outcome.split(';')[0].trim()}
 		</span>
